@@ -6,7 +6,12 @@
 
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, NavItem, NavDropdown, MenuItem, Nav } from 'react-bootstrap';
+import { 
+    Navbar, 
+    // NavItem,
+    // MenuItem, 
+    NavDropdown,   
+    Nav } from 'react-bootstrap';
 
 class Header extends Component {
     render() {

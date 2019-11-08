@@ -1,10 +1,24 @@
+/**
+ * App.js
+ * Will Strong; Nov 8, 2019
+ * Main App Layout for Portfolio WePage
+ */
+
+ import 'bootstrap/dist/css/bootstrap.min.css';
+ import 'holderjs';
+
 import React, { Component } from 'react';
+import { 
+  Button, 
+  Image, 
+  Row, 
+  Col, 
+  Container 
+} from 'react-bootstrap';
+
 import Product from './Product';
 import Header from './Header';
-//import Projects from './Projects';
-import { Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Projects from './Projects';
 
 
 class App extends Component {
@@ -17,7 +31,22 @@ class App extends Component {
           <Product />
           <Button variant="primary">Primary</Button>
         </div>
-        {/* <Projects/> */}
+        <Projects />
+        <div>
+          <Container>
+            <Row>
+              <Col xs={6} md={4}>
+                <Image src="holder.js/171x180" rounded />
+              </Col>
+              <Col xs={6} md={4}>
+                <Image src="holder.js/171x180" roundedCircle />
+              </Col>
+              <Col xs={6} md={4}>
+                <Image src="holder.js/171x180" thumbnail />
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </>
     );
   }
