@@ -8,10 +8,21 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { 
     Navbar, 
-    // NavItem,
-    // MenuItem, 
     NavDropdown,   
     Nav } from 'react-bootstrap';
+import styled from 'styled-components';
+
+const Styles = styled.div `
+    .navbar{
+        background-color:#222
+    }
+`;
+
+export const Navigator = () => (
+    <Styles>
+        
+    </Styles>
+)
 
 class Header extends Component {
     render() {

@@ -4,31 +4,37 @@
  * Main App Layout for Portfolio WePage
  */
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'holderjs';
 
+//React and Bootstrap Headers
+import 'holderjs';
 import React, { Component } from 'react';
 import {
   Jumbotron,
-  //JumbotronProps,
-  //Container 
+  Image 
 } from 'react-bootstrap';
 
-import Header from './Header';
-import Projects from './Projects';
+//Components
+import Navigator from './components/Navigator';
+import Projects from './components/Projects';
 
+//Other Resources
+import './css/App.css';
+import './images/coderTestBg.jpg';
+import './images/computers.jpg';
 
 class App extends Component {
   render() {
     return (
       <>
         <div>
-          <Jumbotron fluid>
-            <h1>My First React App!</h1>
+          <Jumbotron bsPrefix>
+            <Image src={require("./images/computers.jpg")} fluid/>
           </Jumbotron>
-          <Header />
+          <Navigator/>
         </div>
-
+        <div id='test'>
+          fdfas
+        </div>
         <Projects />
       </>
     );

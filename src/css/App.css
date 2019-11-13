@@ -20,3 +20,16 @@
 .App-link {
   color: #09d3ac;
 }
+
+#test{
+  background-image: url("../images/coderTestBg.jpg");
+  background-color: aqua;
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+}
+
+#title{
+  background-image: url("../images/computers.jpg");
+  height: 500px;
+}

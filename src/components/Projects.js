@@ -12,8 +12,10 @@ import {
 class Projects extends Component {
     render() {
         return (
+
+            
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+                <Card.Img variant="top" src={require('../images/TicTacToe.jpg')} />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
