@@ -10,12 +10,13 @@ import 'holderjs';
 import React, { Component } from 'react';
 import {
   Jumbotron,
-  Image 
+  Image
 } from 'react-bootstrap';
 
 //Components
 import Navigator from './components/Navigator';
 import Projects from './components/Projects';
+import Title from './components/Title';
 
 //Other Resources
 import './css/App.css';
@@ -27,13 +28,8 @@ class App extends Component {
     return (
       <>
         <div>
-          <Jumbotron bsPrefix>
-            <Image src={require("./images/computers.jpg")} fluid/>
-          </Jumbotron>
-          <Navigator/>
-        </div>
-        <div id='test'>
-          fdfas
+          <Title/>
+          <Navigator />
         </div>
         <Projects />
       </>

@@ -9,12 +9,16 @@ import {
 
 
 
+
+
+
+ 
 class Projects extends Component {
     render() {
         return (
 
             
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem', margin: '20px' }}>
                 <Card.Img variant="top" src={require('../images/TicTacToe.jpg')} />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
