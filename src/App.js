@@ -8,10 +8,6 @@
 //React and Bootstrap Headers
 import 'holderjs';
 import React, { Component } from 'react';
-import {
-  Jumbotron,
-  Image
-} from 'react-bootstrap';
 
 //Components
 import Navigator from './components/Navigator';
@@ -31,6 +27,10 @@ class App extends Component {
           <Title/>
           <Navigator />
         </div>
+        <Projects />
+        <Projects />
+        <Projects />
+        <Projects />
         <Projects />
       </>
     );

@@ -14,17 +14,17 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
     .navbar{
-        background-color:blue;
-        position: relative;
+        background-color:black;
+        top: 0;
         width: 100%;
         z-index: 1;
         margin:0;
     }
-`;
 
-export const Navigator = () => (
+`;
+export const Navigator = () => ( 
     <Styles>
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar fixed="top" sticky="top"  variant="dark" expand="lg">
             <Navbar.Brand href="#home">Will Strong</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -42,6 +42,6 @@ export const Navigator = () => (
             </Navbar.Collapse>
         </Navbar>
     </Styles>
-)
+);
 
 export default Navigator;
